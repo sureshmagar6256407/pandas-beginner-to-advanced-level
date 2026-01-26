@@ -19,13 +19,16 @@ print(df)
 # print(df[["Name","Age"]])
 
 #filtering the row one condition
-highSalary  = df[df["Salary"] > 40000]
-print(f"employe with salary {highSalary}")
+# highSalary  = df[df["Salary"] > 40000]
+# print(f"employe with salary {highSalary}")
 
 #filtering the row multi condition 
-print("employe with :\n")
-filtered  = df[(df["Salary"] >30000) & (df["Salary"] <42000)]
-print(filtered)
+# print("employe with :\n")
+# filtered  = df[(df["Salary"] >30000) & (df["Salary"] <42000)]
+# print(filtered)
 
+#using or condition 
+filteredOR = df[(df["Salary"]>40000) | (df["PerformanceScore"] > 90)]
+print(filteredOR)
 
 
