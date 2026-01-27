@@ -8,11 +8,7 @@ data  = {
 df   = pd.DataFrame(data)
 print(df)
 
-# .loc []
-# df.loc[row_index,columnname] = newvalue
-# df.loc[0,"Salary"] = 60000  
-# print(df)
-
-#using multi column    
-df['Salary'] = df['Salary']*1.05
+# df.drop(columns =[column_name] ,inplace =True)
+#single columns
+df.drop(columns=["PerformanceScore"] ,inplace= True)
 print(df)
