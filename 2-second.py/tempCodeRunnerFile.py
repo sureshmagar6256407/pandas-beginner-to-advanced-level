@@ -1,0 +1,1 @@
+df.loc[row_index,columnname] = newvalue
